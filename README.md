@@ -33,7 +33,7 @@ It is recommended to use a python `virtual` environment to setup the dependencie
 
 Stage 1
 
-`python train.py --data_dir ../data/icbhi_dataset/audio_and_txt_files/ --folds_file ../data/patient_list_foldwise.txt --model_path models_out --lr 1e-3 --batch_size 64 --num_worker 4 --start_epochs 0 --epochs 200 --test_fold 4`
+`python train.py --data_dir ../data/audio_and_txt_files/ --folds_file ../data/patient_list_foldwise.txt --model_path models_out --lr 1e-3 --batch_size 64 --num_worker 4 --start_epochs 0 --epochs 200 --test_fold 4`
 
 replace the `stetho_id` as `0 or 1 or 2 or 3` for devices `0-3`
 
@@ -43,7 +43,7 @@ Please go through our paper for more details.
 
 Evaluation script
 
-`python eval.py --data_dir ../data/icbhi_dataset/audio_and_txt_files/ --folds_file ../data/patient_list_foldwise.txt --batch_size 64 --num_worker 4 --test_fold 4 --checkpoint models/ckpt_best.pkl`
+`python eval.py --data_dir ../data/audio_and_txt_files/ --folds_file ../data/patient_list_foldwise.txt --batch_size 64 --num_worker 4 --test_fold 4 --checkpoint models/ckpt_best.pkl`
 
 ## Quantitative Results
 
